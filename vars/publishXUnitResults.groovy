@@ -1,4 +1,4 @@
-def call(){
+def call() {
     step([$class: 'XUnitPublisher', testTimeMargin: '3000', thresholdMode: 2,
         thresholds: [
             [$class: 'FailedThreshold', failureNewThreshold: '', failureThreshold: '0', unstableNewThreshold: '', unstableThreshold: ''],
