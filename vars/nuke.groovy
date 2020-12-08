@@ -1,13 +1,7 @@
 def call(Map args) {
 
-    environment{
-        API_KEY = credentials('nuget.dev.apikey')
-    }
-
     def command = 'nuke'
     command = command + " ${args.target}"
-
-    //String apiKey = credentials('nuget.dev.apikey')
 
     echo 'API_KEY ' + env.API_KEY
 
