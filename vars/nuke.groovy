@@ -9,7 +9,7 @@ def call(Map args) {
 
     //String apiKey = credentials('nuget.dev.apikey')
 
-    echo 'API_KEY ' + API_KEY
+    echo 'API_KEY ' + env.API_KEY
 
     for(def argument in args) {        
         if (argument.key != 'target') {
