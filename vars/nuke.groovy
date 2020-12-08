@@ -8,7 +8,7 @@ def call(Map args) {
             def key = argument.key
             def value = argument.value
 
-            command = command + ' --$key \"$value\"'
+            command = command + ' --' + key + ' \"'value'\"'
         }        
     }
 
