@@ -3,6 +3,10 @@ def call(Map args) {
     def command = 'nuke'
     command = command + " ${args.target}"
 
+    def apiKey = credentials('nuget.dev.apikey')
+
+    echo 'API_KEY ' + apiKey
+
     for(def argument in args) {        
         if (argument.key != 'target') {
             def key = argument.key
