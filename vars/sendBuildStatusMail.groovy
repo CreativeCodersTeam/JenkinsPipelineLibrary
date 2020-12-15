@@ -1,4 +1,4 @@
-def call (String statusVerb){
+def call(String statusVerb) {
     def jobName = env.JOB_NAME.replaceAll("%2F", "/")
     def url = env.BUILD_URL.replaceAll("%252F", "%2F")
 
